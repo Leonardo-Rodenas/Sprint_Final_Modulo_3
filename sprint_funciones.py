@@ -44,7 +44,7 @@ def crear_telefono(pacientes):
         while True:
             telefono = input(paciente["nombre"] + ", ingrese su teléfono por favor: ")
             # - El programa debe verificar que el número telefónico tenga 8 dígitos numéricos.
-            if len(telefono) >= 8: 
+            if len(telefono) >= 8 and telefono.isdigit():
                 paciente["telefono"] = telefono
                 break
             else:
