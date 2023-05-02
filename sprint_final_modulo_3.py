@@ -55,7 +55,7 @@ pacientes = [
 ]
 
 # - Elaborar un programa que recorra una lista con los nombres de 10 de sus futuros usuarios de tu aplicación.
-print(pacientes)
+print(pacientes) 
 print()
 
 # - Cada cuenta debe guardarse en una nueva variable con su respectiva contraseña.

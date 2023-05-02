@@ -34,7 +34,7 @@ def generar_cuenta(pacientes):
             # - Asigne una contraseña para cada cuenta. La contraseña debe ser creada con random y debe cumplir con lo siguientes: mayúsculas, minúsculas y números.
             "password": crear_contrasena(10)
         }
-        retorno.append(elemento)
+        retorno.append(elemento) 
     return retorno
 
 def crear_telefono(pacientes):
@@ -44,7 +44,7 @@ def crear_telefono(pacientes):
         while True:
             telefono = input(paciente["nombre"] + ", ingrese su teléfono por favor: ")
             # - El programa debe verificar que el número telefónico tenga 8 dígitos numéricos.
-            if len(telefono) >= 8 and telefono.isdigit():
+            if len(telefono) >= 8 and telefono.isnumeric():
                 paciente["telefono"] = telefono
                 break
             else:
